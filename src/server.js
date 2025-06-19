@@ -24,7 +24,7 @@ const io = initSocket(server);
 
 // Config CORS cho cả Express và Socket.IO
 const corsOptions = {
-  origin: "https://mytour-frontend.onrender.com",
+  origin: "https://mytourfrontend.netlify.app",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 };
