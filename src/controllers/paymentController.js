@@ -191,11 +191,11 @@ class PaymentController {
       let redirectBase;
 
       if (orderInfo.includes("Flight")) {
-        redirectBase = `https://mytour-frontend.onrender.com/checkout-flight/${orderId}`;
+        redirectBase = `https://mytourfrontend.netlify.app/checkout-flight/${orderId}`;
       } else if (orderInfo.includes("Hotel")) {
-        redirectBase = `https://mytour-frontend.onrender.com/checkout`;
+        redirectBase = `https://mytourfrontend.netlify.app/checkout`;
       } else {
-        redirectBase = `https://mytour-frontend.onrender.com/account?tab=booking`;
+        redirectBase = `hhttps://mytourfrontend.netlify.app/account?tab=booking`;
       }
 
       // Nếu redirectBase đã có dấu ?, thì dùng &success=...
