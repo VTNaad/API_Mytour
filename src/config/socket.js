@@ -6,7 +6,7 @@ exports.init = (server, options) => {
   io = socketio(server, {
     ...options,
     cors: {
-      origin: options?.cors?.origin || process.env.CLIENT_URL || "http://localhost:3000",
+      origin: options?.cors?.origin || process.env.CLIENT_URL || "https://mytourfrontend.netlify.app",
       methods: ["GET", "POST"],
       credentials: true
     }
