@@ -191,11 +191,11 @@ class PaymentController {
       let redirectBase;
 
       if (orderInfo.includes("Flight")) {
-        redirectBase = `http://localhost:3000/checkout-flight/${orderId}`;
+        redirectBase = `https://mytour-frontend.onrender.com/checkout-flight/${orderId}`;
       } else if (orderInfo.includes("Hotel")) {
-        redirectBase = `http://localhost:3000/checkout`;
+        redirectBase = `https://mytour-frontend.onrender.com/checkout`;
       } else {
-        redirectBase = `http://localhost:3000/account?tab=booking`;
+        redirectBase = `https://mytour-frontend.onrender.com/account?tab=booking`;
       }
 
       // Nếu redirectBase đã có dấu ?, thì dùng &success=...

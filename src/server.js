@@ -24,7 +24,7 @@ const io = initSocket(server);
 
 // Config CORS cho cả Express và Socket.IO
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://mytour-frontend.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 };
